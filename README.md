@@ -1,5 +1,5 @@
 # BluBox
-![Logo](http://i.imgur.com/PlkORdO.png)
+![Logo](http://i.imgur.com/A1VaXdk.png)
 BluBox is web application for storing informations about movies, tv shows and torrents from transmission server. Built on the Laravel Framework and using AngularJS for frontend! BluBox is offering a API for managing transmissions torrents and files on a server or NAS.
 
 *You can see screenshots of application in the screenshots folder.*
@@ -50,7 +50,7 @@ Application supports multiple users and accounts but there is not any user manag
 Replace YOUR_NEW_PASSWORD_HERE with your password.
 
 1. In /var/www run `php artisan tinker` then type following commands:
-2. `$admin = \BluBox\Modules\User\User::first();`
+2. `$admin = \App\Modules\User\User::first();`
 3. `$admin->password = bcrypt('YOUR_NEW_PASSWORD_HERE');`
 4. `$admin->save();`
 
@@ -58,13 +58,13 @@ Replace YOUR_NEW_PASSWORD_HERE with your password.
 Replace USER_NAME with user name and NEW_USER_PASSWORD with user password.
 
 1. In /var/www run `php artisan tinker` then type following commands:
-2. `\BluBox\Modules\User\User::create(['login' => 'USER_NAME', 'password' => bcrypt('NEW_USER_PASSWORD')]);`
+2. `\App\Modules\User\User::create(['login' => 'USER_NAME', 'password' => bcrypt('NEW_USER_PASSWORD')]);`
 
 ### Removing user
 Replace USER_NAME with user name.
 
 1. In /var/www run `php artisan tinker` then type following commands:
-2. `\BluBox\Modules\User\User::where('login', 'USER_NAME')->delete();`
+2. `\App\Modules\User\User::where('login', 'USER_NAME')->delete();`
 
 ## Todo
 - [ ] User Management System
