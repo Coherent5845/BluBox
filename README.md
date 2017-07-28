@@ -23,10 +23,22 @@ BluBox is web application for storing informations about movies, tv shows and to
 ## Installation
 0. update `.env` file, set at least `APP_URL` `DB_*` `TRANSMISSION_*`
 1. `composer install`
-2. `npm install`
-3. `gulp`
-4. you may want to change admin account login/password you can do it in `database/seeds/CreateAdminAccount.php` or later in command line, see below
-5. migrate and seed database, in directory /var/www run `php artisan migrate --seed`
+2. `apt-get install npm`
+3. `npm install`
+4. `gulp` if fails with module error run `npm install --no-bin-links` then `gulp` again
+5. Set Permissions
+*So this is for production*
+
+`sudo chown -R www-data:www-data *`
+`sudo find . -type d -exec chmod 0755 '{}' + -or -type f -exec chmod 0644 '{}' +`
+
+*And this is for development*
+
+`sudo chown -R www-data:www-data *`
+`sudo find . -type d -exec chmod 0775 '{}' + -or -type f -exec chmod 0664 '{}' +`
+
+6. you may want to change admin account login/password you can do it in `database/seeds/CreateAdminAccount.php` or later in command line, see below
+7. migrate and seed database, in directory /var/www run `php artisan migrate --seed`
 
 ## Users and passwords
 Application supports multiple users and accounts but there is not any user management yet so you have to change default admin password, also you can create new users.
