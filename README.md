@@ -15,9 +15,10 @@ BluBox is web application for storing informations about movies, tv shows and to
 * python-libtorrent (libtorrent-rasterbar version 0.16 or later) on ubuntu: `sudo apt-get install python-libtorrent -y`
 * [transmission](https://transmissionbt.com/)
 
-## Guide
+## Guide (Informational Use)
 ![Logo](https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/tutorials/images/large/Install_LEMP-twitter.png)
-[LEMP](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04)
+
+* [LEMP Installation Guide By Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04)
 
 ## Installation
 0. update `.env` file, set at least `APP_URL` `DB_*` `TRANSMISSION_*`
