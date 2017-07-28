@@ -27,14 +27,17 @@ BluBox is web application for storing informations about movies, tv shows and to
 3. `npm install`
 4. `gulp` if fails with module error run `npm install --no-bin-links` then `gulp` again
 5. Set Permissions
+
 *So this is for production*
 
 `sudo chown -R www-data:www-data *`
+
 `sudo find . -type d -exec chmod 0755 '{}' + -or -type f -exec chmod 0644 '{}' +`
 
 *And this is for development*
 
 `sudo chown -R www-data:www-data *`
+
 `sudo find . -type d -exec chmod 0775 '{}' + -or -type f -exec chmod 0664 '{}' +`
 
 6. you may want to change admin account login/password you can do it in `database/seeds/CreateAdminAccount.php` or later in command line, see below
