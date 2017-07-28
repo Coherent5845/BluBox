@@ -16,7 +16,7 @@ You can see screenshots of application in the screenshots folder.
 * [transmission](https://transmissionbt.com/)
 
 ## Installation
-0. `update `.env` file, set at least `APP_URL` `DB_*` `TRANSMISSION_*`
+0. update `.env` file, set at least `APP_URL` `DB_*` `TRANSMISSION_*`
 1. `composer install`
 2. `npm install`
 3. `gulp`
@@ -49,7 +49,7 @@ Replace USER_NAME with user name.
 ## Todo
 - [ ] User Management System
 - [ ] Translations
-- [ ] Shifting to Laravel 5.4
+- [x] Shifting to Laravel 5.4
 - [ ] Tests
 - [ ] Web Installer
 - [ ] HTML5 Video Streaming
