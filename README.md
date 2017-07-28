@@ -7,7 +7,7 @@ You can see screenshots of application in the screenshots folder.
 ## Requirements
 * ubuntu >= 16.04
 * composer
-* npm / yarn
+* npm
 * php >= 7.0
 * mysql or any database supported by [laravel](https://laravel.com/docs/5.4/database#introduction)
 * nginx or any modern webserver
@@ -16,12 +16,12 @@ You can see screenshots of application in the screenshots folder.
 * transmission server
 
 ## Installation
+0. `update `.env` file, set at least `APP_URL` `DB_*` `TRANSMISSION_*`
 1. `composer install`
-2. `yarn` or `npm install`
+2. `npm install`
 3. `gulp`
-4. update `.env` file, set at least `APP_URL` `DB_*` `TRANSMISSION_*`
-5. you may want to change admin account login/password you can do it in `database/seeds/CreateAdminAccount.php` or later in command line, see below
-6. migrate and seed database, in directory /var/www run `php artisan migrate --seed`
+4. you may want to change admin account login/password you can do it in `database/seeds/CreateAdminAccount.php` or later in command line, see below
+5. migrate and seed database, in directory /var/www run `php artisan migrate --seed`
 
 ## Users and passwords
 Application supports multiple users and accounts but there is not any user management yet so you have to change default admin password, also you can create new users.
