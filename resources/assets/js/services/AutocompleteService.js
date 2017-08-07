@@ -6,8 +6,7 @@ module.exports = function ($http, $httpParamSerializer) {
                 r: 'json'
             };
 
-            $http.get('http://www.omdbapi.com/?' + $httpParamSerializer(queryParamaters), {
-                skipAuthorization: true
+            $http.get('https://www.omdbapi.com/?apikey=b8272f7d&' + $httpParamSerializer(queryParamaters), {
             }).success(success).error(error);
         },
 
@@ -18,8 +17,7 @@ module.exports = function ($http, $httpParamSerializer) {
                 r: 'json'
             };
 
-            $http.get('http://www.omdbapi.com/?' + $httpParamSerializer(queryParamaters), {
-                skipAuthorization: true
+            $http.get('https://www.omdbapi.com/?apikey=b8272f7d&' + $httpParamSerializer(queryParamaters), {
             }).success(success).error(error);
         },
     };
