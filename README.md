@@ -2,8 +2,6 @@
 ![Logo](http://i.imgur.com/A1VaXdk.png)
 BluBox is web application for storing informations about movies, tv shows and torrents from transmission server. Built on the Laravel Framework and using AngularJS for frontend! BluBox is offering a API for managing transmissions torrents and files on a server or NAS.
 
-*You can see screenshots of application in the screenshots folder.*
-
 ## Requirements
 * [Unbuntu](https://www.ubuntu.com) >= 16.04
 * [**PHP**](https://php.net) >= 7.0
@@ -70,7 +68,9 @@ Replace USER_NAME with user name.
 - [ ] User Management System
 - [ ] Translations
 - [x] Shifting to Laravel 5.4
-- [ ] Tests
+- [ ] Shifting to Laravel 5.5
+- [ ] Shifting to Laravel 5.6
+- [ ] Linter Shift
 - [ ] Web Installer
 - [ ] HTML5 Video Streaming
 - [ ] Convert Downloaded Torrents To MP4 + AAC For HTML5 Web Player Compadibility
@@ -78,6 +78,3 @@ Replace USER_NAME with user name.
 - [ ] Light Theme
 - [ ] Auto Pull Meta Info From TMDB API
 - [ ] More Fancy
-
-## License
-Private Git
